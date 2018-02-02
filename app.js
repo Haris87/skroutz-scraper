@@ -11,7 +11,7 @@ request(url, function(error, response, html){
 			var list = $(this);
 			var firstChild = list.children().first();
 			var price = firstChild.find('a.product-link').text();
-			console.log(price);
+			console.log('%s\x1b[32m%s\x1b[0m', 'lowest price: ', price); 
 		});
 		
 	} else {
