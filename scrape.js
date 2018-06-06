@@ -46,7 +46,7 @@ function getCompanyRank($, productList, company){
 		if(c !== '' && !found){
 			rank++;
 			
-			console.log(rank, c, company, c.toLowerCase() === company.toLowerCase());
+			//console.log(rank, c, company, c.toLowerCase() === company.toLowerCase());
 			
 			if(company.toLowerCase() === c.toLowerCase()){
 				found = true;
