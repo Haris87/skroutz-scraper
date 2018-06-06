@@ -20,8 +20,9 @@ router.get('/search/:term', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
 	
-	var url = req.body.url;	
-	Scraper.scrape(url, function(response){
+  var url = req.body.url;	
+  var company = req.body.company || '';
+	Scraper.scrape(url, company, function(response){
 		res.json(response);
 	});
 	
